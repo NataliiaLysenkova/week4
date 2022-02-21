@@ -55,6 +55,29 @@ body {
     border: 1px solid red;
 }
 
+.title-and-btn {
+    display: flex;
+    height: 70vh;
+    width: 80%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0px;
+    margin-left: 100px;
+    margin-bottom: 70px;
+    border: 1px solid red;
+}
+
+@media screen and (max-width: 768px) {
+    .title-and-btn {
+        display: flex;
+        height: 50vh;
+        width: 100%;
+        margin-left: 0px;
+    }
+}
+
 .headerwrapper {
     display: flex;
     height: 100vh;
@@ -66,6 +89,19 @@ body {
     margin-top: 0px;
     background-color: #F7FAFC;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+@media screen and (max-width: 768px) {
+    .headerwrapper {
+        display: flex;
+        height: 80vh;
+        width: 100%;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin-top: 0px;
+    }
 }
 
 .description {
@@ -81,7 +117,7 @@ body {
 
 @media screen and (max-width: 768px) {
     .description {
-        margin-top: 220px;
+        margin-top: 250px;
     }
 }
 
@@ -205,8 +241,7 @@ body {
         flex-grow: 1;
         flex-direction: column;
         flex-wrap: nowrap;
-        margin-top: 10px;
-        margin-bottom: 0px;
+        margin-bottom: 30px;
     }
 }
 
@@ -232,10 +267,31 @@ body {
     .result {
         height: 45%;
         margin-top: 200px;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        align-items: center;
+        align-content: center;
+    }
+}
+
+.text-and-btn {
+    display: flex;
+    width: 80%;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 768px) {
+    .text-and-btn {
+        display: flex;
+        width: 80%;
         flex-direction: row;
         flex-wrap: wrap;
-        justify-content: center;
-        align-content: center;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 50px;
     }
 }
 
@@ -245,8 +301,8 @@ body {
     width: 80%;
     flex-direction: column;
     flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-content: center;
+    justify-content: space-between;
+    align-items: center;
     margin: 100px auto 0 auto;
     background-color: #F7FAFC;
 }
@@ -257,7 +313,6 @@ body {
         flex-flow: column nowrap;
         height: 50%;
         margin: 80px auto 0 auto;
-
     }
 }
 
@@ -289,6 +344,8 @@ body {
         width: 80%;
         margin-left: 0px;
         margin-right: 0px;
+        padding-left: 0px;
+        padding-right: 0px;
     }
 }
 
@@ -297,9 +354,10 @@ body {
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-around;
-    align-content: space-around;
-    max-width: 600px;
-    margin-left: 70px;
+    align-content: center;
+    width: 600px;
+
+    border: 1px solid red;
 }
 
 @media screen and (max-width: 768px) {
@@ -344,6 +402,10 @@ body {
 .title2 {
     font-size: 48px;
     line-height: 56px;
+}
+
+.title2 {
+    margin-top: 0px;
 }
 
 @media screen and (max-width: 768px) {
@@ -451,6 +513,8 @@ body {
     font-size: 24px;
     line-height: 28px;
     color: #718094;
+    margin-top: 0px;
+    margin-bottom: 40px;
 }
 
 @media screen and (max-width: 768px) {
@@ -481,12 +545,14 @@ body {
     font-style: normal;
     font-size: 20px;
     line-height: 23px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 @media screen and (max-width: 768px) {
     .downloadbtn {
         width: calc(100% - 132px);
-        margin-left: 75px;
+        /* margin-left: 75px; */
     }
 }
 
@@ -506,14 +572,14 @@ body {
 @media screen and (max-width: 768px) {
     .getstartedbtn {
         width: calc(100% - 100px);
-        margin: 0 0 0 0;
+        margin: 0 auto 0 auto;
     }
 }
 
 p {
-    text-align: left;
+    /* text-align: left;
     font-size: 20px;
-    line-height: 30px;
+    line-height: 30px; */
     /* or 150% */
     color: #718096;
 }
@@ -532,9 +598,14 @@ p {
         line-height: 24px;
     }
 
+    .summary1,
     .summary2 {
-        padding-top: 0px;
-        margin-top: 0px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .summary2 {
+        margin-bottom: 50px;
     }
 }
 
